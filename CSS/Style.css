@@ -1,0 +1,118 @@
+:root {
+    --primary-colour: #fff;
+    --secondary-colour: rgb(255, 141, 19);
+    --secondary-light-color: rgba(244, 215, 169, 0.649);
+    --purple-primary: purple;
+    --purple-secondary: rgba(186, 109, 186, 0.422);
+    --text-primary: rgba(0, 0, 0, 80%);
+    --text-secondary: #fff;
+    --shadow-primary: 0 0 25px rgba(112, 112, 112, 0.31);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-primary);
+    font-family: nunito, 'Gill Sans', sans-serif;
+    background-color: #f2f2f2;
+    height: 100vh;
+    width: 100wh;
+    line-height: 1.2;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.main-content {
+    box-shadow: orange;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: #fff;
+    width: 350px;
+
+}
+
+.page-title {
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em;
+}
+
+.content-header {
+    padding: 1em;
+    background-color: whitesmoke;
+    text-align: right;
+    border-radius: 20px;
+
+}
+
+.result {
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.content-header div:not(:last-child) {
+    margin-bottom: .6em;
+
+}
+
+.action-buttons-wrapper {
+    margin-bottom: .5em;
+}
+
+
+.button-list {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5em;
+    place-content: center;
+    place-items: center;
+    margin-top: 1em;
+}
+
+.button-list .button-action {
+    box-shadow: var(--shadow-primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    font-weight: 600z;
+}
+
+.button-list .orange {
+    color: #fff;
+    background-color: var(--secondary-colour);
+}
+
+.button-list .light-orange {
+    background-color: var(--secondary-light-color);
+}
+
+.button-list .purple {
+    background-color: var(--purple-primary);
+}
+
+.button-list .light-purple {
+    background-color: var(--purple-secondary);
+}
+
+.button-list #equals {
+    grid-row: 5/7;
+    grid-column: 4/5;
+    height: 100%;
+    font-size: 40px;
+    font-weight: 600;
+    background-color: var(--purple-primary);
+}
